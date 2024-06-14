@@ -1,0 +1,14 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+{{ $backGroundimg := index .Site.Data.homepage.intro.bckGround }}
+{{ with resources.Get $backGroundimg }}
+
+#main > section.one {
+  background-color: #4444;
+  background-image: url({{ .Permalink }});
+}
+
+{{ end }}
