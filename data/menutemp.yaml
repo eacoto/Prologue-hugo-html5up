@@ -1,0 +1,28 @@
+main:
+  - name: "Intro"
+    url: "#top"
+    weight: 10
+    params:
+      id: "top-link"
+      class: "icon solid fa-home"
+
+  - name: "Portfolio"
+    url: "#portfolio"
+    weight: 20
+    params:
+      id: "portfolio-link"
+      class: "icon solid fa-th"
+
+  - name: "About Me"
+    url: "#about"
+    weight: 30
+    params:
+      id: "about-link"
+      class: "icon solid fa-user"
+
+  - name: "Contact"
+    url: "#contact"
+    weight: 40
+    params:
+      id: "contact-link"
+      class: "icon solid fa-envelope"
