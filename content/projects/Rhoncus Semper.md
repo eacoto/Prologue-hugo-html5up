@@ -1,7 +1,7 @@
 ---
 title: "Rhoncus Semper"
 date: "2024-02-05T13:24:34-05:00"
-src: "/images/pic03.jpg"
+src: "/projects/pic03.jpg"
 weight: 1
 ---
 ![pic06](/projects/pic03.jpg)
