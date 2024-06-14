@@ -4,12 +4,9 @@
     <header>
       <h2>{{ .Title }}</h2>
     </header>
-
     <p> {{ .Content }}</p>
-
     <div class="row">
-      
-      {{ range .Pages }}
+      {{- range .Pages }}
       <div class="col-4 col-12-mobile">
           <article class="item">
             <a href="#" class="image fit"><img src="{{ .Params.src }}" alt="" /></a>
@@ -18,24 +15,9 @@
               <p>{{ .Summary }}</p>
               </header>
           </article>
-          <!-- 
-            <article class="item">
-              <a href="#" class="image fit"><img src="{{ .Params.src }}" alt="" /></a>
-              <header>
-                <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-                <p>{{ .Summary }}</p>
-              </header>
-            </article>
-          -->
-
         </div>
       {{ end }}
-
     </div>
-
   </div>
-</section>
-  
- 
-   
+</section>  
 {{ end }}
