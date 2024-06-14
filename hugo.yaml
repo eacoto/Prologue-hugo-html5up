@@ -5,15 +5,21 @@ summaryLength: 20
 
 menus:
   main:
-    - name: 'Home'
+    - name: 'Intro'
       pageRef: '/'
       weight: 10
-    - name: 'Projects'
+    - name: 'Portfolio'
       pageRef: '/projects'
       weight: 20
+    - name: 'About Me'
+      pageRef: '/'
+      weight: 30
+    - name: 'Contac'
+      pageRef: '/'
+      weight: 40
     - name: 'Tags'
       pageRef: '/tags'
-      weight: 30
+      weight: 50
 
 module:
   hugoVersion:
