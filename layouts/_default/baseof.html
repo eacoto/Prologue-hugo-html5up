@@ -3,11 +3,11 @@
 <head>
   {{ partial "head/metadata.html" . }}
 </head>
-<body>
-  <header>
+<body class="is-preload">
+  <header id="header" >
     {{ partial "head/header.html" . }}
   </header>
-  <main>
+  <main id="main">
     {{ block "main" . }}{{ end }}
   </main>
   <footer id="footer" >
