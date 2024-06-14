@@ -26,3 +26,25 @@ main:
     params:
       id: "contact-link"
       class: "icon solid fa-envelope"
+
+social:
+  - name: "Twitter"
+    enabled: true
+    url: "/"
+    icon: "fa-twitter"
+  - name: "Facebook"
+    enabled: true
+    url: "/"
+    icon: fa-facebook-f
+  - name: "Instagram"
+    enabled: "true"
+    url: "/"
+    icon: "fa-instagram"
+  - name: "LinkedIn"
+    enabled: true
+    url: "/"
+    icon: "fa-linkedin"
+  - name: "Github"
+    enabled: true
+    url: "/"
+    icon: "fa-github"
