@@ -1,11 +1,16 @@
 {{ define "main" }}
-  <h5> single template </h5>
-  <h1>{{ .Title }}</h1>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
+<h5> single template </h5>
+<section>
+  <div class="container">
+    <header>
+      <h2>{{ .Title }}</h2>
+    </header>
+    <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+    <p>{{ .Content }}</p>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  </div>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+</section>
 {{ end }}
