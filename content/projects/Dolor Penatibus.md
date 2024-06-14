@@ -1,7 +1,7 @@
 ---
 title: "Dolor Penatibus"
 date: "2024-02-05T13:24:42-05:00"
-src:  "/images/pic06.jpg"
+src:  "/projects/pic06.jpg"
 weight: 3
 ---
 ![pic06](/projects/pic06.jpg)
