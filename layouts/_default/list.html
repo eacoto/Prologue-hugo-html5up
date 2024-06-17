@@ -1,23 +1,24 @@
 {{ define "main" }}
-<section id="portfolio" class="two">
-  <div class="container">
-    <header>
-      <h2>{{ .Title }}</h2>
-    </header>
-    <p> {{ .Content }}</p>
-    <div class="row">
-      {{- range .Pages }}
-      <div class="col-4 col-12-mobile">
-          <article class="item">
-            <a href="#" class="image fit"><img src="{{ .Params.src }}" alt="" /></a>
-            <header>
-              <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-              <p>{{ .Summary }}</p>
-              </header>
-          </article>
-        </div>
-      {{ end }}
+<h5> list template</h5>
+  <section id="portfolio" class="two">
+    <div class="container">
+      <header>
+        <h2>{{ .Title }}</h2>
+      </header>
+      <p> {{ .Content }}</p>
+      <div class="row">
+        {{- range .Pages }}
+        <div class="col-4 col-12-mobile">
+            <article class="item">
+              <a href="#" class="image fit"><img src="{{ .Params.src }}" alt="" /></a>
+              <header>
+                <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+                  <!-- <p>{{ .Summary }}</p> -->
+                </header>
+            </article>
+          </div>
+        {{ end }}
+      </div>
     </div>
-  </div>
-</section>  
+  </section>
 {{ end }}
