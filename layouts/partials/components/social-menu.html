@@ -1,0 +1,10 @@
+<!-- Social Icons -->
+<ul class="icons">
+    <h5>social menu</h5>
+    {{- range .Site.Menus.social }}
+        {{- if .Params.enabled }}
+            <li><a href="{{ .URL }}" class="icon brands {{ with .Params.icon }}{{.}}{{end}}"><span class="label">{{ .Name }}</span></a></li>
+        {{- end }} 
+    {{- end }}
+</ul>
+
