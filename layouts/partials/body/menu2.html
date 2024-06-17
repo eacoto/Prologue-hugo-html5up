@@ -1,0 +1,13 @@
+<!-- nav menu -->
+<p>main menu</p>
+<nav id="nav">
+  {{- range .Site.Menus.main }}
+  <ul>
+    <li>
+      <a href="{{ .URL }}" id="{{ with .Params.id }}{{ . }}{{ end }}"title="{{ .Title }}">
+        <span class="{{ with .Params.class }} {{ . }} {{ end }} ">{{ .Name }}</span>
+      </a>
+    </li>
+  </ul>
+  {{ end }}
+</nav>
