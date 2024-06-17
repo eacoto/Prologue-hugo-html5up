@@ -8,18 +8,57 @@ menus:
     - name: 'Intro'
       pageRef: '/'
       weight: 10
+      params:
+        id: "top-link"
+        class: "icon solid fa-home"
     - name: 'Portfolio'
       pageRef: '/projects'
       weight: 20
+      params:
+        id: "portfolio-link"
+        class: "icon solid fa-th"
     - name: 'About Me'
       pageRef: '/'
       weight: 30
-    - name: 'Contac'
+      params:
+        id: "about-link"
+        class: "icon solid fa-user"
+    - name: 'Contact'
       pageRef: '/'
       weight: 40
+      params:
+        id: "contact-link"
+        class: "icon solid fa-envelope"
     - name: 'Tags'
       pageRef: '/tags'
       weight: 50
+
+  social:
+    - name: "Twitter"
+      url: "/"
+      params:
+        enabled: true
+        icon: "fa-twitter"
+    - name: "Facebook"
+      url: "/"
+      params:
+        enabled: true
+        icon: fa-facebook-f
+    - name: "Instagram"
+      url: "/"
+      params:
+        enabled: "true"
+        icon: "fa-instagram"
+    - name: "LinkedIn"
+      url: "/"
+      params:
+        enabled: true
+        icon: "fa-linkedin"
+    - name: "Github"
+      url: "/"
+      params:
+        enabled: true
+        icon: "fa-github"   
 
 module:
   hugoVersion:
