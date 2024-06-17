@@ -1,7 +1,23 @@
 baseURL: 'https://example.org/'
 languageCode: 'en-us'
-title: 'My New Hugo Site'
+title: 'My New Hugo Site test'
+subtitle: "Hyperspace Engineer hola"
 summaryLength: 20
+
+header:
+  title: "Jane Doe"
+  url: "/#top"
+  params:
+    avatar: "/images/avatar.jpg"
+
+intro:
+  title: "<h2 class='alt'>Hi! I'm <strong>Prologue</strong>, a <a href='http://html5up.net/license'>free</a> responsive<br /> site template designed by <a href='http://html5up.net'>HTML5 UP</a>.</h2>"
+  url: "#portfolio"
+  params :
+    subtitle: "Ligula scelerisque justo sem accumsan diam quis vitae natoque dictum sollicitudin elementum."
+    bckGround: "/images/banner.jpg"
+    btnTitle: "Portfolio"
+    btnEnabled: true
 
 menus:
   main:
