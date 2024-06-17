@@ -1,18 +1,15 @@
 
 <div class="top">
-<!-- Logo -->
-
-<div id="logo">
-	<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-	<h1 id="title">{{ site.Title }}</h1>
-	<p>Hyperspace Engineer</p>
-</div>
-    {{/* partial "body/menu.html" (dict "menuID" "main" "page" .) */}}
-    {{ partial "body/menu2.html" . }}
-
-</div>
-
-
-<div class="bottom">
-	{{ partial "components/social-menu.html" . }}
+	<!-- Logo -->
+	<div id="logo">
+		<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+		<h1 id="title">{{ site.Title }}</h1>
+		<p>Hyperspace Engineer</p>
+	</div>
+		{{/* partial "body/menu.html" (dict "menuID" "main" "page" .) */}}
+		{{ partial "body/menu2.html" . }}
+	</div>
+	<div class="bottom">
+		{{ partial "components/social-menu.html" . }}
+	</div>
 </div>
