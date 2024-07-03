@@ -29,9 +29,9 @@ menus:
       params:
         id: "contact-link"
         class: "icon solid fa-envelope"
-    - name: 'Tags'
-      pageRef: '/tags'
-      weight: 50
+    ## name: 'Tags'
+    ##  pageRef: '/tags'
+    ##  weight: 50
 
 module:
   hugoVersion:
