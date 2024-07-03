@@ -1,8 +1,8 @@
 ########################## Header #############################
 header:
     title: "Jane Doe"
-    subtitle: "Hyperspace Engineer "
-    avatar:  "/images/avatar.jpg"
+    subtitle: "Hyperspace Engineer"
+    url:  "/images/avatar.jpg"
 
 ########################## Homepage Intro  #############################
 intro:
