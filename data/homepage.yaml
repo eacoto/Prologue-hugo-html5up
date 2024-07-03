@@ -39,7 +39,7 @@ social:
 
 ########################## Footer #############################
 footer:
-    untitled: " Untitled."
+    copyright: " Untitled."
     design: "HTML5 UP"
     url : "http://html5up.net"
 
