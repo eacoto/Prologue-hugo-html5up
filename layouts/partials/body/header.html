@@ -1,16 +1,28 @@
 
-
-
+{{ $data := index .Site.Data.homepage }}
 <div class="top">
 	<!-- Logo -->
 	<div id="logo">
-		<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-		<h1 id="title">{{ site.Title }}</h1>
-		<p>Hyperspace Engineer </p>
+		{{ with resources.Get $data.header.url  }}
+		<span class="image avatar48"><img src="{{ .Permalink }}" alt="" /></span>
+		{{ end }}
+		<h1 id="title">{{ $data.header.title }}</h1>
+		<p>{{ $data.header.subtitle }}</p>
 	</div>
 		{{/* partial "body/menu.html" (dict "menuID" "main" "page" .) */}}
 		{{ partial "body/menu2.html" . }}
 </div>
 <div class="bottom">
-	{{ partial "components/social-menu.html" . }}
+	<!-- Social Icons -->
+	<ul class="icons">
+		<h5>social menu</h5>
+		{{- range $data.social }}
+			{{- if .enabled }}
+			<li>
+				<a href="{{ .url }}" class="icon brands {{ .icon }}">
+				  <span class="label">{{.name }} </span></a>
+			  </li>
+			{{- end }} 
+		{{- end }}
+	</ul>
 </div>

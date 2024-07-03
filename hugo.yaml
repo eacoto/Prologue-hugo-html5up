@@ -3,21 +3,6 @@ languageCode: 'en-us'
 title: 'My New Hugo Site test'
 summaryLength: 20
 
-privacy:
-  title: "Jane Doe"
-  subtitle: "Hyperspace Engineer hola"
-  url: "/#top"
-  image: "/images/avatar.jpg"
-
-intro:
-  title: "<h2 class='alt'>Hi! I'm <strong>Prologue</strong>, a <a href='http://html5up.net/license'>free</a> responsive<br /> site template designed by <a href='http://html5up.net'>HTML5 UP</a>.</h2>"
-  url: "#portfolio"
-  params :
-    subtitle: "Ligula scelerisque justo sem accumsan diam quis vitae natoque dictum sollicitudin elementum."
-    bckGround: "/images/banner.jpg"
-    btnTitle: "Portfolio"
-    btnEnabled: true
-
 menus:
   main:
     - name: 'Intro'
@@ -47,33 +32,6 @@ menus:
     - name: 'Tags'
       pageRef: '/tags'
       weight: 50
-
-  social:
-    - name: "Twitter"
-      url: "/"
-      params:
-        enabled: true
-        icon: "fa-twitter"
-    - name: "Facebook"
-      url: "/"
-      params:
-        enabled: true
-        icon: fa-facebook-f
-    - name: "Instagram"
-      url: "/"
-      params:
-        enabled: "true"
-        icon: "fa-instagram"
-    - name: "LinkedIn"
-      url: "/"
-      params:
-        enabled: true
-        icon: "fa-linkedin"
-    - name: "Github"
-      url: "/"
-      params:
-        enabled: true
-        icon: "fa-github"   
 
 module:
   hugoVersion:
