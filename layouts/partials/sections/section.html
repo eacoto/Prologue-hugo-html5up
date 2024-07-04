@@ -1,0 +1,14 @@
+<!-- Sections -->
+{{ $sectImg := .Params.src }}
+<section id="{{.Params.id }}" class=" {{ .Params.class }}">
+  <div class="container">
+    <header>
+      <h2>{{ .Params.Title }}</h2>
+    </header>
+    {{ with resources.Get $sectImg }}
+    <img class="image fit"src="{{ .Permalink }}" alt="" />
+    {{ end }}
+    <p>{{.Content}}</p>
+ 
+  </div>
+</section>

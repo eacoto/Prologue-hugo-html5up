@@ -1,0 +1,17 @@
+<!-- Intro -->
+<section id="{{ .Params.id }}" class="{{ .Params.class }}">
+  <div class="container">
+    {{ $data := index .Site.Data.homepage.intro }}
+    <header>
+      <h2 class="alt">
+        {{ $data.title | safeHTML }}
+      </h2>
+      <p>{{ $data.subtitle }}</p>
+    </header>
+    <footer>
+      {{ if $data.btnEnabled }}
+      <a href="{{ $data.url }}" class="button scrolly">{{ $data.btnTitle }}</a>
+      {{ end }}
+    </footer>
+  </div>
+</section>

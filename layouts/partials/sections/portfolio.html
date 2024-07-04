@@ -1,0 +1,13 @@
+<!-- Portfolio -->
+<section id="{{.Params.id }}" class=" {{ .Params.class }}">
+  <div class="container">
+    <header>
+      <h2> {{ .Params.Title }} </h2>
+    </header>
+    <p>{{.Content}}</p>
+    <div class="row">
+      {{ partial "components/article-card" . }}
+    </div>
+  </div>
+  </div>
+</section>
