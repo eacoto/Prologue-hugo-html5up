@@ -1,0 +1,31 @@
+{{ $projects := where site.RegularPages "Type" "projects" }}
+{{ $totalProjects := len $projects }}
+{{ range seq 0 (sub $totalProjects 4) 4 }}
+    <div class="col-4 col-12-mobile">
+        {{ $firstProject := index $projects . }}
+        {{ $secondProjectIndex := add . 1 }}
+        {{ $secondProject := index $projects $secondProjectIndex }}
+        <article class="item">
+            {{ $firstImg := $firstProject.Params.src }}
+            <a href="{{ $firstProject.Permalink }} " class="image fit">
+                {{ with resources.Get $firstImg }}
+                <img src="{{ .Permalink }}" alt="" /></a>
+                {{ end }}
+                <header>
+                    <h3>{{ $firstProject.Params.title }}</h3>
+                </header>
+            </article>
+            {{ if lt $secondProjectIndex $totalProjects }}
+            <article class="item">
+                {{ $secondImg := $secondProject.Params.src }}
+                <a href="{{ $secondProject.Permalink }} " class="image fit">
+                    {{ with resources.Get $secondImg }}
+                    <img src="{{ .Permalink }}" alt="" /></a>
+        {{ end }}
+        <header>
+            <h3>{{ $secondProject.Params.title }}</h3>
+        </header>
+    </article>
+    {{ end }}
+</div>
+{{ end }}
