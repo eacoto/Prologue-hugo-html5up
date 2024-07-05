@@ -1,0 +1,12 @@
+{{ range .RegularPages }}
+  <h5> range on home template </h5>
+    <section id="{{ .Params.id }}" class="{{ .Params.class }}">
+      <div class="container">
+      <header>
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      </header>
+        <a href="#" class="image featured"><img src="{{ .Params.scr }}" alt="" /></a>
+        <p> {{ .Content }}</p>
+      </div>
+    </section>  
+  {{ end }}
