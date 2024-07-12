@@ -1,9 +1,9 @@
 <!-- Intro -->
-<h5> intro template </h5>
 <section id="top" class="one dark cover">
   <div class="container">
     {{ $data := index .Site.Data.homepage.intro }}
     <header>
+      <h5> intro template </h5>
       <h2 class="alt">
         {{ $data.title | safeHTML }}
       </h2>
