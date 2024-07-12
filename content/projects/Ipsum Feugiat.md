@@ -2,7 +2,7 @@
 title: 'Ipsum Feugiat'
 date: "2024-02-05T13:25:21-05:00"
 src: "/projects/pic06.jpg"
-
+weight: 2
 ---
 <!--  ![pic06](/projects/pic06.jpg) -->
 
