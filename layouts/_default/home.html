@@ -1,14 +1,10 @@
 {{ define "main" }}
-<h5> home template </h5>
-{{ range .Pages }}
-  <section id="about" class="three">
-    <div class="container">
-    <header>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    </header>
-      <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-      <p> {{ .Content }}</p>
-    {{ end }}
-  </div>
-</section>
+<div>
+    <h5> home template </h5>
+</div>
+{{- partial "sections/intro.html" . }}
+{{/*- partial "sections/portfolio.html" . */}}
+{{- partial "sections/section.html" . }}
+{{- partial "sections/contact.html" . }}
+
 {{ end }}
