@@ -1,9 +1,9 @@
 ---
 title: "About Me"
 id: "about"
-weight: 3
+weight: 2
 section_type: "section"
-src: /images/pic08.jpg
+src: "/pic08.jpg"
 class: "three"
 date: "2024-02-05T13:19:35-05:00"
 ---

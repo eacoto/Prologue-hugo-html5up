@@ -2,8 +2,8 @@
 title: "Contact"
 id: "contact"
 weight: 4
-section_type: "section"
-scr: "images/*.jpg"
+section_type: "contact"
+scr: "banner.jpg"
 class: "four"
 date: "2024-02-05T13:19:46-05:00"
 ---
