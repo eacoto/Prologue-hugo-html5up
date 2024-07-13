@@ -1,9 +1,8 @@
+<!-- About-Me -->
 {{ $homepagePages := where site.RegularPages "Type" "home" }}
 {{ $filteredPages := where $homepagePages "Params.section_type" "about-me" }}
-
 {{ range $filteredPages }}
 <section id="about" class="three">
-      <h5> about-me template </h5>
       <div class="container">
       <header>
         <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>

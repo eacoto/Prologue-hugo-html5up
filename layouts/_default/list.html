@@ -1,13 +1,12 @@
 {{ define "main" }}
+<!-- List Template  -->
 <section id="portfolio" class="two">
   <div class="container">
     <header>
-        <h5> list template 123 </h5>
         <h2>{{ .Title }}</h2>
       </header>
       <p> {{ .Content }}</p>
       <div class="row">
-
         <!-- range -->
         {{- $pages := first 6 .Pages -}}
             {{- range $i, $page := $pages }}
@@ -21,17 +20,13 @@
                     </a>
                     <header>
                         <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h2>
-                        <!-- <p>{{ $page.Summary }}</p> -->
                     </header>
                 </article>
-
                 {{- if eq (mod $i 2) 1 -}}
                     </div>
                 {{- end -}}
           {{- end }}
         <!-- range -->
-
-
       </div>
     </div>
   </section>
