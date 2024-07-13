@@ -1,32 +1,27 @@
-{{ $projects := where site.RegularPages "Type" "projects" }}
-{{ $totalProjects := len $projects }}
+<!-- range -->
+
+{{ $pageindex := where site.RegularPages "Type" "projects" }}
+{{ $pages := first 6 $pageindex }}
+
 <div class="row">
-    {{ range seq 0 (sub $totalProjects 4) 4 }}
-    <div class="col-4 col-12-mobile">
-        {{ $firstProject := index $projects . }}
-        {{ $secondProjectIndex := add . 1 }}
-        {{ $secondProject := index $projects $secondProjectIndex }}
-        <article class="item">
-            {{ $firstImg := $firstProject.Params.src }}
-            <a href="{{ $firstProject.Permalink }} " class="image fit"> <img src="{{ $firstImg }}" alt="" /></a>
-           
-                <header>
-                    <h2><a href="{{ $firstProject.Params.title }}"></a>{{ $firstProject.Params.Title }}</h2>
-                   
-                </header>
-            </article>
-            {{ if lt $secondProjectIndex $totalProjects }}
-            <article class="item">
-                {{ $secondImg := $secondProject.Params.src }}
-                <a href="{{ $secondProject.Permalink }} " class="image fit">
-                
-                    <img src="{{ $secondImg }}" alt="" /></a>
-     
+
+
+{{- range $i, $page := $pages }}
+    {{- if eq (mod $i 2) 0 -}}
+        <div class="col-4 col-12-mobile">
+    {{- end -}}
+
+    <article class="item">
+        <a href="{{ $page.RelPermalink }}" class="image fit">
+            <img src="{{ $page.Params.src }}" alt="" />
+        </a>
         <header>
-            <h3>{{ $secondProject.Params.title }}</h3>
+            <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h2>
+            <!-- <p>{{ $page.Summary }}</p> -->
         </header>
     </article>
-    {{ end }}
-</div>
-{{ end }}
-</div>
+
+    {{- if eq (mod $i 2) 1 -}}
+        </div>
+    {{- end -}}
+{{- end }}
