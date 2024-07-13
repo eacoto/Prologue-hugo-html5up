@@ -2,7 +2,7 @@
 {{ $homepagePages := where site.RegularPages "Type" "home" }}
 {{ $filteredPages := where $homepagePages "Params.section_type" "portfolio" }}
 {{ range $filteredPages }}
-<section id="contact" class="four">
+<section id="portfolio"  class="two">
       <div class="container">
       <header>
         <h2>{{ .Title }}</h2>
