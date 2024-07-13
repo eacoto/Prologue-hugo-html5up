@@ -2,7 +2,7 @@
 title: "Portfolio"
 weight: 2
 section_type: "portfolio" 
-scr: "/projects/pic08.jpg"
+scr: 
 date: "2024-02-05T13:20:16-05:00"
 ---
 

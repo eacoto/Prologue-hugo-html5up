@@ -1,8 +1,8 @@
 ---
 title: "About Me"
-section_type: "aboutme"
-src: "/projects/pic06.jpg"
+section_type: "about-me"
 date: "2024-02-05T13:19:35-05:00"
+src: "/projects/pic08.jpg"
 weight: 2
 ---
 
