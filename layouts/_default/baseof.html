@@ -11,9 +11,9 @@
   <main id="main">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer id="footer" >
+  <div id="footer" >
     {{ partial "body/footer.html" . }}
-  </footer>
-    {{ partial "body/scripts.html" . }}
+  </div>
+  {{ partial "body/scripts.html" . }}
 </body>
 </html>
