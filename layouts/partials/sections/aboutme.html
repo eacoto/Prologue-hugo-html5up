@@ -1,0 +1,15 @@
+{{ $homepagePages := where site.RegularPages "Type" "home" }}
+{{ $filteredPages := where $homepagePages "Params.section_type" "aboutme" }}
+
+{{ range $filteredPages }}
+<section id="about" class="three">
+      <h5> aboutme template </h5>
+      <div class="container">
+      <header>
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      </header>
+        <a href="#" class="image featured"><img src="{{ .Params.scr }}" alt="" /></a>
+        <p> {{ .Content }}</p>
+      </div>
+    </section>  
+  {{ end }}

@@ -1,25 +1,34 @@
 <!-- Portfolio -->
+{{ $pageindex := where site.RegularPages "Type" "projects" }}
+{{ $pages := first 6 $pageindex }}
 
-<h5> list template 123</h5>
-  <section id="portfolio" class="two">
+<section id="portfolio" class="two">
+    <h5> Portfolio template </h5>
     <div class="container">
       <header>
         <h2>{{ .Title }}</h2>
       </header>
       <p> {{ .Content }}</p>
       <div class="row">
-        {{- range first 2 .Pages }}
-        <div class="col-4 col-12-mobile">
+                {{- range $i, $page := $pages }}
+            {{- if eq (mod $i 2) 0 -}}
+                <div class="col-4 col-12-mobile">
+            {{- end -}}
             <article class="item">
-              <a href="#" class="image fit"><img src="{{ .Params.src }}" alt="" /></a>
-              <header>
-                <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-                  <!-- <p>{{ .Summary }}</p> -->
+                <a href="{{ $page.RelPermalink }}" class="image fit">
+                    <img src="{{ $page.Params.src }}" alt="" />
+                </a>
+                <header>
+                    <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h2>
+                    <!-- <p>{{ $page.Summary }}</p> -->
                 </header>
             </article>
-          </div>
-        {{ end }}
-      </div>
+            {{- if eq (mod $i 2) 1 -}}
+        </div>
+            {{- end -}}
+        {{- end }}
+
+     
     </div>
   </section>
 
