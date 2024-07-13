@@ -1,34 +1,18 @@
 <!-- Portfolio -->
-{{ $pageindex := where site.RegularPages "Type" "projects" }}
-{{ $pages := first 6 $pageindex }}
 
-<section id="portfolio" class="two">
-    <h5> Portfolio template </h5>
-    <div class="container">
+{{ $homepagePages := where site.RegularPages "Type" "home" }}
+{{ $filteredPages := where $homepagePages "Params.section_type" "portfolio" }}
+
+{{ range $filteredPages }}
+<section id="contact" class="four">
+      <h5> contact template </h5>
+      <div class="container">
       <header>
-        <h2>{{ .Title }}</h2>
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       </header>
-      <p> {{ .Content }}</p>
-      <div class="row">
-                {{- range $i, $page := $pages }}
-            {{- if eq (mod $i 2) 0 -}}
-                <div class="col-4 col-12-mobile">
-            {{- end -}}
-            <article class="item">
-                <a href="{{ $page.RelPermalink }}" class="image fit">
-                    <img src="{{ $page.Params.src }}" alt="" />
-                </a>
-                <header>
-                    <h2><a href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a></h2>
-                    <!-- <p>{{ $page.Summary }}</p> -->
-                </header>
-            </article>
-            {{- if eq (mod $i 2) 1 -}}
-        </div>
-            {{- end -}}
-        {{- end }}
-
-     
-    </div>
-  </section>
-
+        <a href="#" class="image featured"><img src="{{ .Params.scr }}" alt="" /></a>
+        <p> {{ .Content }}</p>
+        {{- partial "components/article-card.html" . }}
+      </div>
+    </section>  
+  {{ end }}
