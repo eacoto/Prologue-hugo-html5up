@@ -1,0 +1,64 @@
+header:
+  title: "Jane Doe"
+  subtitle: "Hyperspace Engineer hola"
+  url: "/#top"
+  avatar: "/images/avatar.jpg"
+
+intro:
+  title: "<h2 class='alt'>Hi! I'm <strong>Prologue</strong>, a <a href='http://html5up.net/license'>free</a> responsive<br /> site template designed by <a href='http://html5up.net'>HTML5 UP</a>.</h2>"
+  subtitle: "Ligula scelerisque justo sem accumsan diam quis vitae natoque dictum sollicitudin elementum."
+  bckGround: "/images/banner.jpg"
+  btnTitle: "Portfolio"
+  url: "#portfolio"
+  btnEnabled: true
+
+main:
+  - name: "Intro"
+    url: "#top"
+    weight: 10
+    params:
+      id: "top-link"
+      class: "icon solid fa-home"
+
+  - name: "Portfolio"
+    url: "#portfolio"
+    weight: 20
+    params:
+      id: "portfolio-link"
+      class: "icon solid fa-th"
+
+  - name: "About Me"
+    url: "#about"
+    weight: 30
+    params:
+      id: "about-link"
+      class: "icon solid fa-user"
+
+  - name: "Contact"
+    url: "#contact"
+    weight: 40
+    params:
+      id: "contact-link"
+      class: "icon solid fa-envelope"
+
+social:
+  - name: "Twitter"
+    enabled: true
+    url: "/"
+    icon: "fa-twitter"
+  - name: "Facebook"
+    enabled: true
+    url: "/"
+    icon: fa-facebook-f
+  - name: "Instagram"
+    enabled: "true"
+    url: "/"
+    icon: "fa-instagram"
+  - name: "LinkedIn"
+    enabled: true
+    url: "/"
+    icon: "fa-linkedin"
+  - name: "Github"
+    enabled: true
+    url: "/"
+    icon: "fa-github"
