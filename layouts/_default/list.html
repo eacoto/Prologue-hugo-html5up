@@ -10,7 +10,6 @@
 
         <!-- range -->
         {{- $pages := first 6 .Pages -}}
-
             {{- range $i, $page := $pages }}
                 {{- if eq (mod $i 2) 0 -}}
                     <div class="col-4 col-12-mobile">
@@ -30,9 +29,6 @@
                     </div>
                 {{- end -}}
           {{- end }}
-
-    
-        
         <!-- range -->
 
 
