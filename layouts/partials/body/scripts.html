@@ -3,7 +3,7 @@
   {{- range $scripts }}
     {{- $script := . }}
     {{- if in $script "min.js" }}
-      <script src="{{ $script }}"></script>
+      <script src="{{ $script.Permalink }}"></script>
     {{- else }}
       {{- with resources.Get $script }}
         {{- if eq hugo.Environment "development" }}
