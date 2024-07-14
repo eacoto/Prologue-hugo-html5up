@@ -6,27 +6,31 @@ summaryLength: 20
 menus:
   main:
     - name: 'Intro'
-      pageRef: '/#top'
+      pageRef: '/'
       weight: 10
       params:
+        url : "#top"
         id: "top-link"
         class: "icon solid fa-home"
     - name: 'Portfolio'
-      pageRef: '/#portfolio'
+      pageRef: '/projects'
       weight: 20
       params:
+        url : "#portfolio"
         id: "portfolio-link"
         class: "icon solid fa-th"
     - name: 'About Me'
-      pageRef: '/#about'
+      pageRef: '/About Me'
       weight: 30
       params:
+        url : "#about"
         id: "about-link"
         class: "icon solid fa-user"
     - name: 'Contact'
-      pageRef: '/#contact'
+      pageRef: '/contact'
       weight: 40
       params:
+        url: "#contact"
         id: "contact-link"
         class: "icon solid fa-envelope"
     ## name: 'Tags'
