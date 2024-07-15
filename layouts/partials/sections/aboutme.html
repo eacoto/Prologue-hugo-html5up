@@ -4,10 +4,10 @@
 {{ range $filteredPages }}
 <section id="about" class="three">
       <div class="container">
-      <header>
-        <h2>{{ .Title }}</h2>
+      <header>   
+        <h2>{{ .LinkTitle }}</h2>
       </header>
-        <a href="#" class="image featured"><img src="{{ .Params.scr }}" alt="" /></a>
+        <a href="#" class="image featured"><img src="{{ .Params.src}}" alt="" /></a>
         <p> {{ .Content }}</p>
       </div>
     </section>  
