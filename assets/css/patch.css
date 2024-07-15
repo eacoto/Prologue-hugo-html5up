@@ -1,8 +1,4 @@
 
-html {
-  scroll-behavior: smooth;
-}
-
 {{ $backGroundimg := index .Site.Data.homepage.intro.bckGround }}
 {{ with resources.Get $backGroundimg }}
 

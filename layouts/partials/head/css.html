@@ -1,4 +1,4 @@
-<!-- Scripts -->
+<!-- CSS -->
 {{- $styles := slice "/css/main.css" "/css/fontawesome-all.min.css" }}
   {{- range $styles }}
     {{- with resources.Get . }}
@@ -11,3 +11,5 @@
     {{- end }}
   {{- end }}
 {{- end }}
+{{ $patch := resources.Get "/css/patch.css" | resources.ExecuteAsTemplate "patch.css" . }}
+<link rel="stylesheet" href="{{ $patch.Permalink }}" />
