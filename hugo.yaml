@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Prologue Hugo"
 summaryLength: 20
 params:
-  description: Text about my cool site
+  description: "Hugo version of Prologue Theme by Html5up"
   images:
   - /images/prologue-home.png
 
