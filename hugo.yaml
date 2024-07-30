@@ -1,6 +1,6 @@
-baseURL: 'https://example.org/'
-languageCode: 'en-us'
-title: 'My New Hugo Site test'
+baseURL:  "http://localhost:1313/"
+languageCode: "en-us"
+title: "Prologue Hugo"
 summaryLength: 20
 params:
   description: Text about my cool site
