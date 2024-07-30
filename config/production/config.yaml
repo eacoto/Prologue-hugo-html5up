@@ -1,1 +1,8 @@
-baseURL: "https=//eacoto.github.io/Prologue-Hugo-html5up"
+############### dev BaseUrl ################
+baseUR: "http://localhost:3000/"
+
+############### local BaseUrl ################
+# baseURL:  "http://localhost:1313/"
+
+############### Production BaseUrl ################
+# baseURL: "https=//eacoto.github.io/Prologue-Hugo-html5up"
